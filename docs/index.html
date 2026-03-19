@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global History Timeline | 1900–Present</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/global-timeline/assets/index-Bn6PushH.js"></script>
+  <link rel="stylesheet" crossorigin href="/global-timeline/assets/index-B23_Y5Gy.css">
+</head>
+<body>
+  <!-- Globe Panel -->
+  <div id="globe-panel">
+    <canvas id="globe-canvas"></canvas>
+    <div id="globe-info">
+      <div id="globe-location"></div>
+    </div>
+  </div>
+
+  <!-- Top Bar -->
+  <header id="top-bar">
+    <div id="logo">
+      <h1>GLOBAL HISTORY</h1>
+      <span class="subtitle">1900 — Present</span>
+    </div>
+    <div id="controls">
+      <div id="category-filters"></div>
+      <div id="nav-buttons">
+        <button id="prev-btn" title="Previous Event">‹</button>
+        <button id="next-btn" title="Next Event">›</button>
+      </div>
+      <div id="zoom-controls">
+        <button id="zoom-in" title="Zoom In">+</button>
+        <button id="zoom-out" title="Zoom Out">−</button>
+        <span id="zoom-level">100%</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Decade markers -->
+  <div id="decade-bar"></div>
+
+  <!-- Timeline -->
+  <div id="timeline-container">
+    <div id="timeline-track">
+      <svg id="connections-svg"></svg>
+      <div id="timeline-line"></div>
+      <div id="events-container"></div>
+    </div>
+  </div>
+
+  <!-- Detail Panel -->
+  <div id="detail-panel" class="hidden">
+    <button id="close-detail">✕</button>
+    <div id="detail-content">
+      <div id="detail-category"></div>
+      <h2 id="detail-title"></h2>
+      <div id="detail-date"></div>
+      <img id="detail-image" src="" alt="" />
+      <div id="detail-description"></div>
+      <div id="detail-connections"></div>
+    </div>
+  </div>
+
+</body>
+</html>
