@@ -26,6 +26,9 @@
     </div>
     <div id="controls">
       <div id="category-filters"></div>
+      <button id="conflict-back" class="mode-btn hidden" title="Return to full timeline">
+        <span class="mode-icon">◀</span> <span id="conflict-back-label">Full Timeline</span>
+      </button>
       <div id="nav-buttons">
         <button id="prev-btn" title="Previous Event">‹</button>
         <button id="next-btn" title="Next Event">›</button>
@@ -50,18 +53,14 @@
     </div>
   </div>
 
-  <!-- Detail Panel -->
-  <div id="detail-panel" class="hidden">
-    <button id="close-detail">✕</button>
-    <div id="detail-content">
-      <div id="detail-category"></div>
-      <h2 id="detail-title"></h2>
-      <div id="detail-date"></div>
-      <img id="detail-image" src="" alt="" />
-      <div id="detail-image-fallback"></div>
-      <div id="detail-description"></div>
-      <div id="detail-connections"></div>
+  <!-- Progress Scrubber -->
+  <div id="progress-bar">
+    <div id="progress-track">
+      <div id="progress-decades"></div>
+      <div id="progress-viewport"></div>
+      <div id="progress-handle"></div>
     </div>
+    <div id="progress-year-label"></div>
   </div>
 
   <script type="module" src="/src/main.js"></script>

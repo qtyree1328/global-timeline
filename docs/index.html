@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/global-timeline/assets/index-YigAas33.js"></script>
-  <link rel="stylesheet" crossorigin href="/global-timeline/assets/index-HYjiawpU.css">
+  <script type="module" crossorigin src="/global-timeline/assets/index-DFccYBE6.js"></script>
+  <link rel="stylesheet" crossorigin href="/global-timeline/assets/index-HvUyQW83.css">
 </head>
 <body>
   <!-- Globe Panel -->
@@ -27,6 +27,9 @@
     </div>
     <div id="controls">
       <div id="category-filters"></div>
+      <button id="conflict-back" class="mode-btn hidden" title="Return to full timeline">
+        <span class="mode-icon">◀</span> <span id="conflict-back-label">Full Timeline</span>
+      </button>
       <div id="nav-buttons">
         <button id="prev-btn" title="Previous Event">‹</button>
         <button id="next-btn" title="Next Event">›</button>
@@ -51,18 +54,14 @@
     </div>
   </div>
 
-  <!-- Detail Panel -->
-  <div id="detail-panel" class="hidden">
-    <button id="close-detail">✕</button>
-    <div id="detail-content">
-      <div id="detail-category"></div>
-      <h2 id="detail-title"></h2>
-      <div id="detail-date"></div>
-      <img id="detail-image" src="" alt="" />
-      <div id="detail-image-fallback"></div>
-      <div id="detail-description"></div>
-      <div id="detail-connections"></div>
+  <!-- Progress Scrubber -->
+  <div id="progress-bar">
+    <div id="progress-track">
+      <div id="progress-decades"></div>
+      <div id="progress-viewport"></div>
+      <div id="progress-handle"></div>
     </div>
+    <div id="progress-year-label"></div>
   </div>
 
 </body>
